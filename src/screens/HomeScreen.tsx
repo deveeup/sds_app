@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { SafeAreaView, Text, Button } from 'react-native';
-import { getProducts } from '../api/products';
+import { getData } from '../api/get';
+
 export default function HomeScreen({ navigation }: any) {
 
   useEffect(() => {
@@ -11,7 +12,7 @@ export default function HomeScreen({ navigation }: any) {
 
   const loadProducts = async () => {
     try {
-      const response = await getProducts();
+      const response = await getData('products');
       console.log(response);
 
     } catch(error) {
