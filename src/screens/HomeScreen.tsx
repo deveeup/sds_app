@@ -21,7 +21,7 @@ export default function HomeScreen({ navigation }: any) {
   }
 
   const goValidate = () => {
-    navigation.navigate("Validate")
+    navigation.navigate("Validation")
   };
   return (
     <SafeAreaView>

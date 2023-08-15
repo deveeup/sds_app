@@ -2,7 +2,8 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import HomeNavigation from "./HomeNavigation";
 import ValidateNavigation from "./ValidateNavigation";
-import ShopNavigation from "./ShopNavigation";
+import ProfileNavigation from "./ProfileNavigation";
+import LanguageScreen from '../screens/LanguageScreen';
 import { ROUTES } from "../constants/routes";
 
 const Tab = createMaterialBottomTabNavigator();
@@ -24,10 +25,10 @@ export default function NavigationTabs() {
         name={ROUTES.VALIDATE}
         component={ValidateNavigation}
         options={{
-          tabBarLabel: "Profile",
+          tabBarLabel: "Validation",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="account-alert"
+              name="check-decagram"
               color={color}
               size={26}
             />
@@ -35,13 +36,23 @@ export default function NavigationTabs() {
         }}
       />
       <Tab.Screen
-        name={ROUTES.SHOP}
-        component={ShopNavigation}
+        name={ROUTES.PROFILE}
+        component={ProfileNavigation}
         options={{
-          tabBarLabel: "Shop",
+          tabBarLabel: "Profile",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="account" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name={ROUTES.LANGUAGE}
+        component={LanguageScreen}
+        options={{
+          tabBarLabel: "Language",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="account-alert"
+              name="tooltip-text-outline"
               color={color}
               size={26}
             />

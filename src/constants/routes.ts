@@ -1,6 +1,7 @@
 export enum ROUTES {
   HOME = "Home",
   SHOP = "Shop",
-  VALIDATE = "Validate",
+  VALIDATE = "Validation",
   PROFILE = "Profile",
+  LANGUAGE = "Language",
 };

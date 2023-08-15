@@ -5,10 +5,10 @@ import { ROUTES } from "../constants/routes";
 
 const Stack = createStackNavigator();
 
-export default function ShopNavigation() {
+export default function ProfileNavigation() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name={ROUTES.SHOP} component={ShopScreen} />
+      <Stack.Screen name={ROUTES.PROFILE} component={ShopScreen} />
     </Stack.Navigator>
   );
 }
