@@ -1,10 +1,10 @@
 import React from 'react';
 import { SafeAreaView, Text } from 'react-native';
 
-export default function ShopScreen() {
+export default function ProfileScreen() {
   return (
     <SafeAreaView>
-      <Text>shopp!</Text>
+      <Text>Profile!</Text>
     </SafeAreaView>
   )
 };

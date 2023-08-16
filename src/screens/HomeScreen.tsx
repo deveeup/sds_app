@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
 import { SafeAreaView, Text, Button } from 'react-native';
 import { getData } from '../api/get';
+import { getTranslations } from '../translations';
+
 
 export default function HomeScreen({ navigation }: any) {
-
   useEffect(() => {
     (async () => {
       await loadProducts();
     })();
   }, []);
+
+  const { home } = getTranslations();
 
   const loadProducts = async () => {
     try {
@@ -23,9 +26,10 @@ export default function HomeScreen({ navigation }: any) {
   const goValidate = () => {
     navigation.navigate("Validation")
   };
+
   return (
     <SafeAreaView>
-      <Text>This is home!</Text>
+      <Text>{home.title}</Text>
       <Button onPress={goValidate} title="go validate" />
     </SafeAreaView>
   )

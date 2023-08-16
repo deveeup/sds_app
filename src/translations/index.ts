@@ -1,9 +1,30 @@
+import { useContext } from 'react';
+import { ContextApi } from "../context";
+
 export const EN = {
-  HOME_TITLE: 'Home',
-  VALIDATION_TITLE: 'Validation'
+  home: {
+    title: 'Home'
+  },
+  validation: {
+    title: 'Validation'
+  }
 };
 
 export const ES = {
-  HOME_TITLE: "Inicio",
-  VALIDATION_TITLE: "Validación",
+  home: {
+    title: 'Inicio'
+  },
+  validation: {
+    title: 'Validación',
+  },
 };
+
+
+
+export const getTranslations = () => {
+  const {
+    state: { spanish },
+  } = useContext(ContextApi);
+  return spanish ? ES : EN;
+};
+

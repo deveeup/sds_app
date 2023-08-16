@@ -1,13 +1,14 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView, Text, TextInput, View, StyleSheet } from 'react-native';
-import { ContextApi } from '../context';
+import { getTranslations } from '../translations';
+
 export default function ValidateScreen() {
-  const { state: { translations }, state} = useContext(ContextApi);
   const [text, onChangeText] = useState('Useless Text');
+  const { validation } = getTranslations();
+
   return (
     <SafeAreaView>
-      <Text>{state?.language}</Text>
-      <Text>{state?.translations?.VALIDATION_TITLE}</Text>
+      <Text>{validation.title}</Text>
       <Text>Verify Animal Registration</Text>
       <Text>
         Services Dog School is the nation's largest Support Animal registry. Enter your registration number (found on your animal's ID, begins with either ES- or SA-) below to verify your animal's registration information. Please click on the next tab to verify your ESA Letter. Any questions? Email us at support@servicesdogschool.com

@@ -5,17 +5,20 @@ import ValidateNavigation from "./ValidateNavigation";
 import ProfileNavigation from "./ProfileNavigation";
 import LanguageScreen from '../screens/LanguageScreen';
 import { ROUTES } from "../constants/routes";
+import { getTranslations } from "../translations";
 
 const Tab = createMaterialBottomTabNavigator();
 
 export default function NavigationTabs() {
+  const { home, validation } = getTranslations();
+
   return (
     <Tab.Navigator>
       <Tab.Screen
         component={HomeNavigation}
         name={ROUTES.HOME}
         options={{
-          tabBarLabel: "Home",
+          tabBarLabel: home.title,
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
@@ -25,7 +28,7 @@ export default function NavigationTabs() {
         name={ROUTES.VALIDATE}
         component={ValidateNavigation}
         options={{
-          tabBarLabel: "Validation",
+          tabBarLabel: validation.title,
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="check-decagram"

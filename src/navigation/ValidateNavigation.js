@@ -1,14 +1,16 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import ValidateScreen from "../screens/ValidateScreen";
-import { ROUTES } from "../constants/routes";
+import { getTranslations } from "../translations";
 
 const Stack = createStackNavigator();
 
 export default function ValidateNavigation() {
+  const { validation } = getTranslations();
+
   return (
     <Stack.Navigator>
-      <Stack.Screen name={ROUTES.VALIDATE} component={ValidateScreen} />
+      <Stack.Screen name={validation.title} component={ValidateScreen} />
     </Stack.Navigator>
   );
 }
