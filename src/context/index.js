@@ -1,13 +1,12 @@
 import React, { createContext, useState } from 'react';
-import { EN, LANGUAGE } from '../translations';
+import { EN } from '../translations';
 
 export const ContextApi = createContext();
 
 
 export const ContextProvider = ({ children }) => {
   const [state, setState] = useState({
-    language: LANGUAGE.EN,
-    test: 'test',
+    spanish: false,
     translations: EN,
   });
 

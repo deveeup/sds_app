@@ -9,8 +9,8 @@ export default function LanguageScreen() {
 
   return (
     <SafeAreaView>
-      <Text>{state.language}</Text>
-      <Button title='theButton' onPress={() => changeState({ language: 'ES' })} />
+      <Text>{state.spanish ? 'ES' : 'EN'}</Text>
+      <Button title='Change language' onPress={() => changeState({ spanish: !state.spanish })} />
     </SafeAreaView>
   )
 };
