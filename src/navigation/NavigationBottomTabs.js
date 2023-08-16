@@ -1,11 +1,11 @@
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import HomeNavigation from "./HomeNavigation";
-import ValidateNavigation from "./ValidateNavigation";
-import ProfileNavigation from "./ProfileNavigation";
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import HomeNavigation from './HomeNavigation';
+import ValidateNavigation from './ValidateNavigation';
+import ProfileNavigation from './ProfileNavigation';
 import LanguageScreen from '../screens/LanguageScreen';
-import { ROUTES } from "../constants/routes";
-import { getTranslations } from "../translations";
+import { ROUTES } from '../constants/routes';
+import { getTranslations } from '../translations';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -20,7 +20,7 @@ export default function NavigationTabs() {
         options={{
           tabBarLabel: home.title,
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name='home' color={color} size={26} />
           ),
         }}
       />
@@ -31,7 +31,7 @@ export default function NavigationTabs() {
           tabBarLabel: validation.title,
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="check-decagram"
+              name='check-decagram'
               color={color}
               size={26}
             />
@@ -42,9 +42,9 @@ export default function NavigationTabs() {
         name={ROUTES.PROFILE}
         component={ProfileNavigation}
         options={{
-          tabBarLabel: "Profile",
+          tabBarLabel: 'Profile',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={26} />
+            <MaterialCommunityIcons name='account' color={color} size={26} />
           ),
         }}
       />
@@ -52,10 +52,10 @@ export default function NavigationTabs() {
         name={ROUTES.LANGUAGE}
         component={LanguageScreen}
         options={{
-          tabBarLabel: "Language",
+          tabBarLabel: 'Language',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="tooltip-text-outline"
+              name='tooltip-text-outline'
               color={color}
               size={26}
             />

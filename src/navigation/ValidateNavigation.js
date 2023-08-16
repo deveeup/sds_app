@@ -1,7 +1,7 @@
-import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
-import ValidateScreen from "../screens/ValidateScreen";
-import { getTranslations } from "../translations";
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import ValidateScreen from '../screens/ValidateScreen';
+import { getTranslations } from '../translations';
 
 const Stack = createStackNavigator();
 

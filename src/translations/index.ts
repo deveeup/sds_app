@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ContextApi } from "../context";
+import { ContextApi } from '../context';
 
 export const EN = {
   home: {
