@@ -4,15 +4,12 @@ import { getTranslations } from '../translations';
 import { ROUTES } from '../constants/routes';
 
 export default function ValidateScreen({ navigation }: any) {
-  const [text, onChangeText] = useState('Useless Text');
+  const [petId, onChangePetId] = useState('');
   const { validation } = getTranslations();
   const goDetailScreen = () =>
     navigation.navigate(
       ROUTES.PET_DETAILS,
-      {
-        itemId: 86,
-        otherParam: 'anything you want here',
-      }
+      {petId}
     );
 
   return (
@@ -25,9 +22,10 @@ export default function ValidateScreen({ navigation }: any) {
       <View style={styles.boxContainer}>
         <Text style={styles.sa}>SA</Text>
         <TextInput
+          onChangeText={onChangePetId}
+          placeholder='2809130'
           style={styles.input}
-          onChangeText={onChangeText}
-          value={text}
+          value={petId}
         />
       </View>
       <Button title='VALIDATE' onPress={() => goDetailScreen()} />
