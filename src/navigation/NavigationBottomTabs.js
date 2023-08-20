@@ -3,7 +3,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import HomeNavigation from './HomeNavigation';
 import ValidateNavigation from './ValidateNavigation';
 import ProfileNavigation from './ProfileNavigation';
-import LanguageScreen from '../screens/LanguageScreen';
+import LanguageNavigation from "./LanguageNavigation";
 import { ROUTES } from '../constants/routes';
 import { getTranslations } from '../translations';
 
@@ -50,7 +50,7 @@ export default function NavigationTabs() {
       />
       <Tab.Screen
         name={ROUTES.LANGUAGE}
-        component={LanguageScreen}
+        component={LanguageNavigation}
         options={{
           tabBarLabel: routes.language,
           tabBarIcon: ({ color }) => (
