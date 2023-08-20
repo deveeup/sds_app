@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
-import { SafeAreaView, Text, TextInput, View, StyleSheet } from 'react-native';
+import { Button, SafeAreaView, Text, TextInput, View, StyleSheet } from 'react-native';
 import { getTranslations } from '../translations';
+import { ROUTES } from '../constants/routes';
 
-export default function ValidateScreen() {
+export default function ValidateScreen({ navigation }: any) {
   const [text, onChangeText] = useState('Useless Text');
   const { validation } = getTranslations();
+  const goDetailScreen = () =>
+    navigation.navigate(
+      ROUTES.PET_DETAILS,
+      {
+        itemId: 86,
+        otherParam: 'anything you want here',
+      }
+    );
 
   return (
     <SafeAreaView>
@@ -21,6 +30,7 @@ export default function ValidateScreen() {
           value={text}
         />
       </View>
+      <Button title='VALIDATE' onPress={() => goDetailScreen()} />
     </SafeAreaView>
   )
 };

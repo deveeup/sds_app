@@ -10,7 +10,7 @@ import { getTranslations } from '../translations';
 const Tab = createMaterialBottomTabNavigator();
 
 export default function NavigationTabs() {
-  const { home, validation } = getTranslations();
+  const { routes } = getTranslations();
 
   return (
     <Tab.Navigator>
@@ -18,9 +18,9 @@ export default function NavigationTabs() {
         component={HomeNavigation}
         name={ROUTES.HOME}
         options={{
-          tabBarLabel: home.title,
+          tabBarLabel: routes.home,
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name='home' color={color} size={26} />
+            <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}
       />
@@ -28,10 +28,10 @@ export default function NavigationTabs() {
         name={ROUTES.VALIDATE}
         component={ValidateNavigation}
         options={{
-          tabBarLabel: validation.title,
+          tabBarLabel: routes.validation,
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name='check-decagram'
+              name="check-decagram"
               color={color}
               size={26}
             />
@@ -42,9 +42,9 @@ export default function NavigationTabs() {
         name={ROUTES.PROFILE}
         component={ProfileNavigation}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: routes.profile,
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name='account' color={color} size={26} />
+            <MaterialCommunityIcons name="account" color={color} size={26} />
           ),
         }}
       />
@@ -52,10 +52,10 @@ export default function NavigationTabs() {
         name={ROUTES.LANGUAGE}
         component={LanguageScreen}
         options={{
-          tabBarLabel: 'Language',
+          tabBarLabel: routes.language,
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name='tooltip-text-outline'
+              name="tooltip-text-outline"
               color={color}
               size={26}
             />
