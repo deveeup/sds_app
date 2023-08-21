@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, Text, Image, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, Image, View } from 'react-native';
 import { getData } from '../../api/get';
+import PetDetailStyles from './styles';
+import { Table } from '../../components/Table/Table';
 
 export default function PetDetailScreen({ route, navigation }: any) {
   useEffect(() => {
@@ -22,22 +24,74 @@ export default function PetDetailScreen({ route, navigation }: any) {
   }
 
   return (
-    <SafeAreaView>
-      <Text>Pet Details!</Text>
-      <Text>{petId}</Text>
-      <Image
-        style={styles.petImage}
-        source={{
-          uri: petData.image,
-        }}
-      />
+    <SafeAreaView style={PetDetailStyles.Container}>
+      <View style={PetDetailStyles.ImageContainer}>
+        <Image
+          style={PetDetailStyles.PetImage}
+          source={{
+            uri: petData.image,
+          }}
+          />
+        <Image
+          style={PetDetailStyles.ImageContainerIcon}
+          source={require('../../assets/images/verified.png')}
+        />
+      </View>
+      <Text style={PetDetailStyles.Title}>
+        {String(petData.name).toUpperCase()}
+      </Text>
+      {/* Table information */}
+      {/* <View style={PetDetailStyles.TableContainer}>
+        <View style={PetDetailStyles.TableContainerItem}>
+          <Text
+            style={PetDetailStyles.TableContainerItemTitle}
+          >
+            Microchip
+          </Text>
+          <Text
+            style={PetDetailStyles.TableContainerItemText}
+          >
+            {petData.microchip}
+          </Text>
+        </View>
+        <View style={PetDetailStyles.TableContainerItem}>
+          <Text
+            style={PetDetailStyles.TableContainerItemTitle}
+          >
+            Animal type
+          </Text>
+          <Text
+            style={PetDetailStyles.TableContainerItemText}
+          >
+            {petData.animalType}
+          </Text>
+        </View>
+        <View style={PetDetailStyles.TableContainerItem}>
+          <Text
+            style={PetDetailStyles.TableContainerItemTitle}
+          >
+            Registration date
+          </Text>
+          <Text
+            style={PetDetailStyles.TableContainerItemText}
+          >
+            {petData.registerDate}
+          </Text>
+        </View>
+        <View style={PetDetailStyles.TableContainerItem}>
+          <Text
+            style={PetDetailStyles.TableContainerItemTitle}
+          >
+            Species
+          </Text>
+          <Text
+            style={PetDetailStyles.TableContainerItemText}
+          >
+            {petData.species}
+          </Text>
+        </View>
+      </View> */}
+      <Table />
     </SafeAreaView>
   )
 };
-
-const styles = StyleSheet.create({
-  petImage: {
-    width: 200,
-    height: 200,
-  },
-});
