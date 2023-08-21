@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { SafeAreaView, Text, Button } from 'react-native';
-import { getData } from '../api/get';
-import { getTranslations } from '../translations';
+import { getData } from '../../api/get';
+import { getTranslations } from '../../translations';
 
 
 export default function HomeScreen({ navigation }: any) {

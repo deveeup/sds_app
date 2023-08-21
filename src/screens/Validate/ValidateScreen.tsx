@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, SafeAreaView, Text, TextInput, View, StyleSheet } from 'react-native';
-import { getTranslations } from '../translations';
-import { ROUTES } from '../constants/routes';
+import { getTranslations } from '../../translations';
+import { ROUTES } from '../../constants/routes';
 
 export default function ValidateScreen({ navigation }: any) {
   const [petId, onChangePetId] = useState('');

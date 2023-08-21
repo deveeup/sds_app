@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from '@react-navigation/stack';
-import ValidateScreen from '../screens/ValidateScreen';
-import PetDetailScreen from '../screens/PetDetailScreen';
+import ValidateScreen from '../screens/Validate/ValidateScreen';
+import PetDetailScreen from '../screens/PetDetail/PetDetailScreen';
 import { getTranslations } from "../translations";
 import { ROUTES } from '../constants/routes';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import LanguageScreen from "../screens/LanguageScreen";
+import LanguageScreen from "../screens/Language/LanguageScreen";
 import { ROUTES } from '../constants/routes';
 import { getTranslations } from "../translations";
 

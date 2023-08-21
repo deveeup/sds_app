@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, Text, Image, StyleSheet } from 'react-native';
-import { getData } from '../api/get';
+import { getData } from '../../api/get';
 
 export default function PetDetailScreen({ route, navigation }: any) {
   useEffect(() => {
