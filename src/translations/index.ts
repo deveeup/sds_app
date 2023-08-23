@@ -6,6 +6,7 @@ export const EN = {
     home: "Home",
     validation: "Validation",
     profile: "Profile",
+    pdf: "PDF",
     petValidation: "Pet Validation",
     language: "Language",
   },
@@ -38,6 +39,7 @@ export const ES = {
   routes: {
     home: "Inicio",
     validation: "Validación",
+    pdf: "PDF",
     profile: "Perfil",
     petValidation: "Verificación de mascota",
     language: "Idioma",
