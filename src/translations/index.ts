@@ -3,33 +3,67 @@ import { ContextApi } from '../context';
 
 export const EN = {
   routes: {
-    home: 'Home',
-    validation: 'Validation',
-    profile: 'Profile',
-    petValidation: 'Pet Validation',
-    language: 'Language',
+    home: "Home",
+    validation: "Validation",
+    profile: "Profile",
+    petValidation: "Pet Validation",
+    language: "Language",
   },
   home: {
-    title: 'Home'
+    title: "Home",
   },
   validation: {
-    title: 'Validation',
-  }
+    age: "Age",
+    animalType: "Animal Type",
+    birthdate: "Birthdate",
+    breed: "Breed",
+    certificate: "Certificate",
+    expirationDate: "N/A",
+    id: "ID",
+    image: "Image",
+    license: "License",
+    microchip: "Microchip",
+    name: "Name",
+    owner: "Owner",
+    password: "Password",
+    registerDate: "Register Date",
+    registerState: "Register State",
+    species: "Species",
+    title: "Validation",
+    weight: "Weight",
+  },
 };
 
 export const ES = {
   routes: {
-    home: 'Inicio',
-    validation: 'Validación',
-    profile: 'Perfil',
-    petValidation: 'Verificación de mascota',
-    language: 'Idioma',
+    home: "Inicio",
+    validation: "Validación",
+    profile: "Perfil",
+    petValidation: "Verificación de mascota",
+    language: "Idioma",
   },
   home: {
-    title: 'Inicio',
+    title: "Inicio",
   },
   validation: {
-    title: 'Validación',
+    age: "Edad",
+    animalType: "Tipo de animal",
+    birthdate: "Fecha de nacimiento",
+    breed: "Raza",
+    certificate: "Certificado",
+    expirationDate: "N/A",
+    id: "Código",
+    image: "Imagen",
+    license: "Carnet",
+    microchip: "Microchip",
+    name: "Nombre",
+    owner: "Dueño",
+    password: "Contraseña",
+    registerDate: "Fecha de registro",
+    registerState: "Estado de registro",
+    species: "Especie",
+    title: "Validación",
+    weight: "Peso",
   },
 };
 

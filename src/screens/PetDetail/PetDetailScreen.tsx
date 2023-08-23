@@ -40,58 +40,7 @@ export default function PetDetailScreen({ route, navigation }: any) {
       <Text style={PetDetailStyles.Title}>
         {String(petData.name).toUpperCase()}
       </Text>
-      {/* Table information */}
-      {/* <View style={PetDetailStyles.TableContainer}>
-        <View style={PetDetailStyles.TableContainerItem}>
-          <Text
-            style={PetDetailStyles.TableContainerItemTitle}
-          >
-            Microchip
-          </Text>
-          <Text
-            style={PetDetailStyles.TableContainerItemText}
-          >
-            {petData.microchip}
-          </Text>
-        </View>
-        <View style={PetDetailStyles.TableContainerItem}>
-          <Text
-            style={PetDetailStyles.TableContainerItemTitle}
-          >
-            Animal type
-          </Text>
-          <Text
-            style={PetDetailStyles.TableContainerItemText}
-          >
-            {petData.animalType}
-          </Text>
-        </View>
-        <View style={PetDetailStyles.TableContainerItem}>
-          <Text
-            style={PetDetailStyles.TableContainerItemTitle}
-          >
-            Registration date
-          </Text>
-          <Text
-            style={PetDetailStyles.TableContainerItemText}
-          >
-            {petData.registerDate}
-          </Text>
-        </View>
-        <View style={PetDetailStyles.TableContainerItem}>
-          <Text
-            style={PetDetailStyles.TableContainerItemTitle}
-          >
-            Species
-          </Text>
-          <Text
-            style={PetDetailStyles.TableContainerItemText}
-          >
-            {petData.species}
-          </Text>
-        </View>
-      </View> */}
-      <Table />
+      <Table petData={petData} />
     </SafeAreaView>
   )
 };

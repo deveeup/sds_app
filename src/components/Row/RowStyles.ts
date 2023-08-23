@@ -9,8 +9,8 @@ const RowStyles = StyleSheet.create({
   Title: {
     paddingHorizontal: 5,
     borderColor: "gray",
-    paddingVertical: 3,
-    width: "35%",
+    paddingVertical: 4,
+    width: "40%",
     textAlign: "right",
     overflow: "hidden",
     borderWidth: 1,
@@ -19,12 +19,12 @@ const RowStyles = StyleSheet.create({
   Text: {
     paddingHorizontal: 5,
     borderColor: "gray",
-    paddingVertical: 3,
-    width: "65%",
+    paddingVertical: 4,
+    width: "60%",
     textAlign: "left",
     overflow: "hidden",
     borderWidth: 1,
-    fontWeight: "bold",
+    fontWeight: "normal",
   },
 });
 
