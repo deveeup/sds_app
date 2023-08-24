@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button, SafeAreaView, Text, TextInput, View, StyleSheet } from 'react-native';
+import { Button, Text, TextInput, View, StyleSheet } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 import { getTranslations } from '../../translations';
 import { ROUTES } from '../../constants/routes';
 

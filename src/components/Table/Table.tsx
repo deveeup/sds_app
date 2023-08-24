@@ -2,13 +2,19 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { Row } from '../Row/Row';
 import TableStyles from './TableStyles';
-export function Table({ petData }: any) {
+export function Table({ petData, navigation }: any) {
   return (
     <View style={TableStyles.Container}>
       {Object.entries(petData).sort().map((item: any) => {
         switch (item[0]) {
           case 'certificate':
-            return <Row title={item[0]} file={item[1]} />;
+            return (
+              <Row
+                title={item[0]}
+                file={item[1]}
+                navigation={navigation}
+              />
+            );
           case 'findPet':
             return;
           case 'image':
@@ -20,7 +26,13 @@ export function Table({ petData }: any) {
           case 'password':
             return;
           case 'license':
-            return <Row title={item[0]} file={item[1]} />;
+            return (
+              <Row
+                file={item[1]}
+                navigation={navigation}
+                title={item[0]}
+              />
+            );
           default:
             return <Row title={item[0]} text={item[1]} />
         }

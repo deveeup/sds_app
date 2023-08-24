@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { SafeAreaView, Text, Button } from 'react-native';
+import { Text, Button } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 import { getData } from '../../api/get';
 import { getTranslations } from '../../translations';
 

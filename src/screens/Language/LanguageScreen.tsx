@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-
-import { SafeAreaView, Button, Text } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
+import { Button, Text } from 'react-native';
 import { ContextApi } from '../../context';
 
 export default function LanguageScreen() {

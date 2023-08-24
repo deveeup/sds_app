@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, Text, Image, View, Button } from 'react-native';
+import { Text, Image, View } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 import { getData } from '../../api/get';
 import PetDetailStyles from './styles';
 import { Table } from '../../components/Table/Table';
@@ -22,9 +23,7 @@ export default function PetDetailScreen({ route, navigation }: any) {
       console.error(error);
     }
   }
-  const goPdf = () => {
-    navigation.navigate("PDF")
-  };
+
   return (
     <SafeAreaView style={PetDetailStyles.Container}>
       <View style={PetDetailStyles.ImageContainer}>
@@ -42,8 +41,7 @@ export default function PetDetailScreen({ route, navigation }: any) {
       <Text style={PetDetailStyles.Title}>
         {String(petData.name).toUpperCase()}
       </Text>
-      <Button title='GO TO PDF' onPress={goPdf} />
-      <Table petData={petData} />
+      <Table petData={petData} navigation={navigation} />
     </SafeAreaView>
   )
 };

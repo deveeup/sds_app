@@ -8,6 +8,8 @@ const PetDetailStyles = StyleSheet.create({
   },
   PetImage: {
     borderRadius: 200,
+    borderWidth: 2,
+    borderColor: "#3C0C24",
     height: 200,
     marginTop: 50,
     width: 200,
