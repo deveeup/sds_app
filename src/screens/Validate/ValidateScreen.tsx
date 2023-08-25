@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   input: {
-    background: 'white',
+    backgroundColor: 'white',
     borderRadius: 5,
     height: 40,
     margin: 12,
