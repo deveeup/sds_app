@@ -13,6 +13,10 @@ export const EN = {
   home: {
     title: "Home",
   },
+  language: {
+    change: "Change to",
+    description: "Your language selected is",
+  },
   validation: {
     age: "Age",
     animalType: "Animal Type",
@@ -46,6 +50,10 @@ export const ES = {
   },
   home: {
     title: "Inicio",
+  },
+  language: {
+    change: "Cambiar a",
+    description: "Su idioma seleccionado es",
   },
   validation: {
     age: "Edad",

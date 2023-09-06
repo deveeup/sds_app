@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import LanguageScreen from "../screens/Language/LanguageScreen";
 import { ROUTES } from '../constants/routes';
 import { getTranslations } from "../translations";
+import LanguageScreen from "../screens/Language/LanguageScreen";
 
 const Stack = createStackNavigator();
 

@@ -1,11 +1,11 @@
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { ROUTES } from '../constants/routes';
+import { getTranslations } from '../translations';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeNavigation from './HomeNavigation';
 import ValidateNavigation from './ValidateNavigation';
 import ProfileNavigation from './ProfileNavigation';
 import LanguageNavigation from "./LanguageNavigation";
-import { ROUTES } from '../constants/routes';
-import { getTranslations } from '../translations';
 
 const Tab = createMaterialBottomTabNavigator();
 

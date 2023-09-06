@@ -18,7 +18,6 @@ export default function HomeScreen({ navigation }: any) {
     try {
       const response = await getData('products');
       console.log(response);
-
     } catch(error) {
       console.error(error);
     }

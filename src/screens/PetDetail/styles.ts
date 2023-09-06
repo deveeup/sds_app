@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { COLORS } from '../../constants/colors';
 
 const PetDetailStyles = StyleSheet.create({
   Container: {
@@ -9,7 +10,7 @@ const PetDetailStyles = StyleSheet.create({
   PetImage: {
     borderRadius: 200,
     borderWidth: 2,
-    borderColor: "#3C0C24",
+    borderColor: COLORS.VIOLET,
     height: 200,
     marginTop: 50,
     width: 200,
