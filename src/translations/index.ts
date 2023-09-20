@@ -1,5 +1,5 @@
-import { useContext } from 'react';
-import { ContextApi } from '../context';
+import { useContext } from "react";
+import { ContextApi } from "../context";
 
 export const EN = {
   routes: {
@@ -77,12 +77,9 @@ export const ES = {
   },
 };
 
-
-
 export const getTranslations = () => {
   const {
     state: { spanish },
   } = useContext(ContextApi);
   return spanish ? ES : EN;
 };
-

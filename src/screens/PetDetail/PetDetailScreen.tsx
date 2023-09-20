@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Text, Image, View } from 'react-native';
-import SafeAreaView from 'react-native-safe-area-view';
-import { getData } from '../../api/get';
-import PetDetailStyles from './styles';
-import { Table } from '../../components/Table/Table';
+import React, { useEffect, useState } from "react";
+import { Text, Image, View } from "react-native";
+import SafeAreaView from "react-native-safe-area-view";
+import { getData } from "../../api/get";
+import PetDetailStyles from "./styles";
+import { Table } from "../../components/Table/Table";
 
 export default function PetDetailScreen({ route, navigation }: any) {
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function PetDetailScreen({ route, navigation }: any) {
           />
         <Image
           style={PetDetailStyles.ImageContainerIcon}
-          source={require('../../assets/images/verified.png')}
+          source={require("../../assets/images/verified.png")}
         />
       </View>
       <Text style={PetDetailStyles.Title}>

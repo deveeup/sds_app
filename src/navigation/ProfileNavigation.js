@@ -1,8 +1,8 @@
-import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import { ROUTES } from '../constants/routes';
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { ROUTES } from "../constants/routes";
 import { getTranslations } from "../translations";
-import ProfileScreen from '../screens/Profile/ProfileScreen';
+import ProfileScreen from "../screens/Profile/ProfileScreen";
 
 const Stack = createStackNavigator();
 

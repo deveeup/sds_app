@@ -1,4 +1,4 @@
-import { API_URL } from '../constants/api';
+import { API_URL } from "../constants/api";
 
 export async function getData(endpoint: string) {
   try {
@@ -10,4 +10,4 @@ export async function getData(endpoint: string) {
   } catch (error) {
     throw error;
   }
-};
+}

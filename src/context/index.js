@@ -1,17 +1,16 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState } from "react";
 
 export const ContextApi = createContext();
-
 
 export const ContextProvider = ({ children }) => {
   const [state, setState] = useState({
     spanish: false,
   });
 
-  const changeState = newState => {
+  const changeState = (newState) => {
     setState({
       ...state,
-      ...newState
+      ...newState,
     });
   };
 
@@ -21,4 +20,3 @@ export const ContextProvider = ({ children }) => {
     </ContextApi.Provider>
   );
 };
-

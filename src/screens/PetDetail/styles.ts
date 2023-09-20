@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { COLORS } from '../../constants/colors';
+import { StyleSheet } from "react-native";
+import { COLORS } from "../../constants/colors";
 
 const PetDetailStyles = StyleSheet.create({
   Container: {

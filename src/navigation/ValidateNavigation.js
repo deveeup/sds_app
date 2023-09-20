@@ -1,10 +1,10 @@
 import React from "react";
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator } from "@react-navigation/stack";
 import { getTranslations } from "../translations";
-import { ROUTES } from '../constants/routes';
-import ValidateScreen from '../screens/Validate/ValidateScreen';
-import PetDetailScreen from '../screens/PetDetail/PetDetailScreen';
-import PDFScreen from '../screens/PDF/pdf';
+import { ROUTES } from "../constants/routes";
+import ValidateScreen from "../screens/Validate/ValidateScreen";
+import PetDetailScreen from "../screens/PetDetail/PetDetailScreen";
+import PDFScreen from "../screens/PDF/pdf";
 
 const Stack = createStackNavigator();
 

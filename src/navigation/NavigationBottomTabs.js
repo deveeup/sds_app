@@ -1,10 +1,10 @@
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { ROUTES } from '../constants/routes';
-import { getTranslations } from '../translations';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import HomeNavigation from './HomeNavigation';
-import ValidateNavigation from './ValidateNavigation';
-import ProfileNavigation from './ProfileNavigation';
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import { ROUTES } from "../constants/routes";
+import { getTranslations } from "../translations";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import HomeNavigation from "./HomeNavigation";
+import ValidateNavigation from "./ValidateNavigation";
+import ProfileNavigation from "./ProfileNavigation";
 import LanguageNavigation from "./LanguageNavigation";
 
 const Tab = createMaterialBottomTabNavigator();
@@ -13,7 +13,15 @@ export default function NavigationTabs() {
   const { routes } = getTranslations();
 
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarOptions: {
+          style: {
+            backgroundColor: "red",
+          },
+        },
+      }}
+    >
       <Tab.Screen
         component={HomeNavigation}
         name={ROUTES.HOME}
@@ -64,4 +72,4 @@ export default function NavigationTabs() {
       />
     </Tab.Navigator>
   );
-};
+}

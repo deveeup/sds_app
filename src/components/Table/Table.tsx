@@ -1,13 +1,13 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import { Row } from '../Row/Row';
-import TableStyles from './TableStyles';
+import React from "react";
+import { View, Text } from "react-native";
+import { Row } from "../Row/Row";
+import TableStyles from "./TableStyles";
 export function Table({ petData, navigation }: any) {
   return (
     <View style={TableStyles.Container}>
       {Object.entries(petData).sort().map((item: any) => {
         switch (item[0]) {
-          case 'certificate':
+          case "certificate":
             return (
               <Row
                 title={item[0]}
@@ -15,17 +15,17 @@ export function Table({ petData, navigation }: any) {
                 navigation={navigation}
               />
             );
-          case 'findPet':
+          case "findPet":
             return;
-          case 'image':
+          case "image":
             return;
-          case 'loading':
+          case "loading":
             return;
-          case 'name':
+          case "name":
             return;
-          case 'password':
+          case "password":
             return;
-          case 'license':
+          case "license":
             return (
               <Row
                 file={item[1]}
