@@ -1,4 +1,4 @@
-import { StyleSheet, Button } from "react-native";
+import { StyleSheet } from "react-native";
 import { COLORS } from "../../constants/colors";
 
 const ProfileStyles = StyleSheet.create({
@@ -29,6 +29,24 @@ const ProfileStyles = StyleSheet.create({
   Label: {
     fontWeight: "bold",
     marginTop: 20,
+  },
+  InputError: {
+    backgroundColor: COLORS.RED,
+    borderColor: COLORS.RED,
+    borderRadius: 5,
+    borderWidth: 1,
+    color: COLORS.WHITE,
+    marginVertical: 5,
+    opacity: 0.5,
+    paddingHorizontal: 15,
+    paddingVertical: 8,
+    width: "65%",
+  },
+  ErrorDescription: {
+    color: COLORS.RED,
+    fontStyle: "italic",
+    fontSize: 12,
+    width: "65%",
   },
 });
 

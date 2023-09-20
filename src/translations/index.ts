@@ -38,6 +38,10 @@ export const EN = {
     weight: "Weight",
   },
   profile: {
+    errorPassword: "Password is required",
+    errorCertification: "Certification number is required",
+    errorCertificationMin:
+      "The certification number field must have a minimum of 7 characters",
     inputCertification: "Certification number",
     inputPassword: "Password",
     loginButton: "Sign In",
@@ -83,6 +87,10 @@ export const ES = {
     weight: "Peso",
   },
   profile: {
+    errorCertification: "El campo certificación es requerido",
+    errorCertificationMin:
+      "El campo certificación debe tener mínimo 7 caracteres",
+    errorPassword: "El campo contraseña es requerido",
     inputCertification: "Número de certificado",
     inputPassword: "Contraseña",
     loginButton: "Iniciar sesión",
