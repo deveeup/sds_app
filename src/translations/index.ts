@@ -4,11 +4,11 @@ import { ContextApi } from "../context";
 export const EN = {
   routes: {
     home: "Home",
-    validation: "Validation",
-    profile: "Profile",
+    language: "Language",
     pdf: "PDF",
     petValidation: "Pet Validation",
-    language: "Language",
+    profile: "Profile",
+    validation: "Validation",
   },
   home: {
     title: "Home",
@@ -37,16 +37,23 @@ export const EN = {
     title: "Validation",
     weight: "Weight",
   },
+  profile: {
+    inputCertification: "Certification number",
+    inputPassword: "Password",
+    loginButton: "Sign In",
+    placeholderPassword: "Your password",
+    title: "Profile",
+  },
 };
 
 export const ES = {
   routes: {
     home: "Inicio",
-    validation: "Validación",
-    pdf: "PDF",
-    profile: "Perfil",
-    petValidation: "Verificación de mascota",
     language: "Idioma",
+    pdf: "PDF",
+    petValidation: "Verificación de mascota",
+    profile: "Perfil",
+    validation: "Validación",
   },
   home: {
     title: "Inicio",
@@ -74,6 +81,13 @@ export const ES = {
     species: "Especie",
     title: "Validación",
     weight: "Peso",
+  },
+  profile: {
+    inputCertification: "Número de certificado",
+    inputPassword: "Contraseña",
+    loginButton: "Iniciar sesión",
+    placeholderPassword: "Tu contraseña",
+    title: "Perfil",
   },
 };
 
