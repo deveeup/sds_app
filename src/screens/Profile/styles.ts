@@ -8,6 +8,10 @@ const ProfileStyles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
   },
+  Error: {
+    color: COLORS.RED,
+    marginTop: 45,
+  },
   Input: {
     backgroundColor: COLORS.WHITE,
     borderRadius: 5,

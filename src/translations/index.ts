@@ -42,6 +42,7 @@ export const EN = {
     errorCertification: "Certification number is required",
     errorCertificationMin:
       "The certification number field must have a minimum of 7 characters",
+    errorLogin: "Invalid Certification Number or Password",
     inputCertification: "Certification number",
     inputPassword: "Password",
     loginButton: "Sign In",
@@ -90,6 +91,7 @@ export const ES = {
     errorCertification: "El campo certificación es requerido",
     errorCertificationMin:
       "El campo certificación debe tener mínimo 7 caracteres",
+    errorLogin: "Número de Certificado o Contraseña inválidos",
     errorPassword: "El campo contraseña es requerido",
     inputCertification: "Número de certificado",
     inputPassword: "Contraseña",

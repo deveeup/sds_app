@@ -17,8 +17,7 @@ export default function HomeScreen({ navigation }: any) {
   const loadProducts = async () => {
     try {
       const response = await getData("products");
-      console.log(response);
-    } catch(error) {
+    } catch (error) {
       console.error(error);
     }
   }

@@ -5,6 +5,7 @@ export const ContextApi = createContext();
 export const ContextProvider = ({ children }) => {
   const [state, setState] = useState({
     spanish: false,
+    user: {},
   });
 
   const changeState = (newState) => {
