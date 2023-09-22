@@ -1,9 +1,11 @@
 export enum ROUTES {
   HOME = "Home",
   LANGUAGE = "Language",
-  PET_DETAILS = "PetDetail",
+  LOGIN = "Login",
   PDF = "PDF",
+  PET_DETAILS = "PetDetail",
   PROFILE = "Profile",
   SHOP = "Shop",
+  USER = "User",
   VALIDATE = "Validation",
 }

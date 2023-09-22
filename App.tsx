@@ -3,10 +3,10 @@ import NavigationTabs from "./src/navigation/NavigationBottomTabs";
 import { ContextProvider } from "./src/context";
 export default function App() {
   return (
-    <ContextProvider>
-      <NavigationContainer>
+    <NavigationContainer>
+      <ContextProvider>
         <NavigationTabs />
-      </NavigationContainer>
-    </ContextProvider>
+      </ContextProvider>
+    </NavigationContainer>
   );
 };

@@ -45,9 +45,11 @@ export const EN = {
     errorLogin: "Invalid Certification Number or Password",
     inputCertification: "Certification number",
     inputPassword: "Password",
+    login: "Sign In",
     loginButton: "Sign In",
     placeholderPassword: "Your password",
     title: "Profile",
+    user: "User data",
   },
 };
 
@@ -95,9 +97,11 @@ export const ES = {
     errorPassword: "El campo contraseña es requerido",
     inputCertification: "Número de certificado",
     inputPassword: "Contraseña",
+    login: "Iniciar sesión",
     loginButton: "Iniciar sesión",
     placeholderPassword: "Tu contraseña",
     title: "Perfil",
+    user: "Datos de usuario",
   },
 };
 

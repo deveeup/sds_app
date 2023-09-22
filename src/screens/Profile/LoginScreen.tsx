@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { View, Text, TextInput, Button, TouchableHighlight } from "react-native";
 import SafeAreaView from "react-native-safe-area-view";
 import { useFormik } from "formik";
@@ -8,9 +8,8 @@ import { getTranslations } from "../../translations";
 import { getData } from "../../api/get";
 import { COLORS } from "../../constants/colors";
 import ProfileStyles from "./styles";
-import { ROUTES } from "../../constants/routes";
 
-export default function ProfileScreen({ navigation }: any) {
+export default function ProfileScreen() {
   const { changeState } = useContext(ContextApi);
   const { profile } = getTranslations();
   const [error, setError] = useState('');
@@ -35,6 +34,7 @@ export default function ProfileScreen({ navigation }: any) {
         await changeState({
           user: pet
         });
+        // REDIRECT TO PROFILE PAGE
       } else {
         setError(profile.errorLogin);
       }
