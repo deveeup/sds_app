@@ -15,8 +15,22 @@ export const ContextProvider = ({ children }) => {
     });
   };
 
+  const login = (user) => {
+    setState({
+      ...state,
+      user,
+    });
+  };
+
+  const logout = () => {
+    setState({
+      ...state,
+      user: {},
+    });
+  };
+
   return (
-    <ContextApi.Provider value={{ state, changeState }}>
+    <ContextApi.Provider value={{ state, changeState, login, logout }}>
       {children}
     </ContextApi.Provider>
   );

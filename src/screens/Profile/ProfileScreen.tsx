@@ -11,7 +11,7 @@ import ProfileStyles from "./styles";
 import { ROUTES } from "../../constants/routes";
 
 export default function ProfileScreen({ navigation }: any) {
-  const { changeState } = useContext(ContextApi);
+  const { login } = useContext(ContextApi);
   const { profile } = getTranslations();
   const [error, setError] = useState('');
   const formik = useFormik({
@@ -30,11 +30,9 @@ export default function ProfileScreen({ navigation }: any) {
     }),
     validateOnChange: false,
     onSubmit: async ({ certificationNumber, password }) => {
-      const pet = await getData(`dog/SA-${certificationNumber}`);
-      if (String(pet.password) === String(password)) {
-        await changeState({
-          user: pet
-        });
+      const user = await getData(`dog/SA-${certificationNumber}`);
+      if (String(user.password) === String(password)) {
+        await login(user);
       } else {
         setError(profile.errorLogin);
       }
