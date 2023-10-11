@@ -3,7 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { ROUTES } from "../constants/routes";
 import { ContextApi } from "../context";
 import { getTranslations } from "../translations";
-import ProfileScreen from "../screens/Profile/ProfileScreen";
+import LoginScreen from "../screens/Profile/LoginScreen";
 import UserScreen from "../screens/Profile/UserScreen";
 
 const Stack = createStackNavigator();
@@ -28,7 +28,7 @@ export default function ProfileNavigation() {
         />
       ) : (
         <Stack.Screen
-          component={ProfileScreen}
+          component={LoginScreen}
           name={ROUTES.PROFILE}
           options={{ title: routes.profile }}
         />
