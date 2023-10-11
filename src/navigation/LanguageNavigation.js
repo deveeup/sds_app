@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { ROUTES } from "../constants/routes";
+import { SCREENS } from "../constants/routes";
 import { getTranslations } from "../translations";
 import LanguageScreen from "../screens/Language/LanguageScreen";
 
@@ -13,7 +13,7 @@ export default function LanguageNavigation() {
     <Stack.Navigator>
       <Stack.Screen
         component={LanguageScreen}
-        name={ROUTES.LANGUAGE}
+        name={SCREENS.LANGUAGE}
         options={{ title: routes.language }}
       />
     </Stack.Navigator>

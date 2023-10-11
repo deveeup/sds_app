@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { getTranslations } from "../translations";
-import { ROUTES } from "../constants/routes";
+import { SCREENS } from "../constants/routes";
 import ValidateScreen from "../screens/Validate/ValidateScreen";
 import PetDetailScreen from "../screens/PetDetail/PetDetailScreen";
 import PDFScreen from "../screens/PDF/pdf";
@@ -15,17 +15,17 @@ export default function ValidateNavigation() {
     <Stack.Navigator>
       <Stack.Screen
         component={ValidateScreen}
-        name={ROUTES.VALIDATE}
+        name={SCREENS.VALIDATE}
         options={{ title: routes.validation }}
       />
       <Stack.Screen
         component={PetDetailScreen}
-        name={ROUTES.PET_DETAILS}
+        name={SCREENS.PET_DETAILS}
         options={{ title: routes.petValidation }}
       />
       <Stack.Screen
         component={PDFScreen}
-        name={ROUTES.PDF}
+        name={SCREENS.PDF}
         options={{ title: routes.petValidation }}
       />
     </Stack.Navigator>
