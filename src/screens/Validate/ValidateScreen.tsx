@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { Button, Text, TextInput, View, StyleSheet } from "react-native";
 import SafeAreaView from "react-native-safe-area-view";
 import { getTranslations } from "../../translations";
-import { ROUTES } from "../../constants/routes";
+import { SCREENS } from "../../constants/routes";
 
 export default function ValidateScreen({ navigation }: any) {
   const [petId, onChangePetId] = useState("");
   const { validation } = getTranslations();
-  const goDetailScreen = () =>
+  const goDetailScreen = () => 
     navigation.navigate(
-      ROUTES.PET_DETAILS,
+      SCREENS.PET_DETAILS,
       {petId}
     );
 
