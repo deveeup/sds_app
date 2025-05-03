@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Services Dog School",
-    "slug": "servicesdogschool",
+    "slug": "sdsapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -30,8 +30,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "d10574bf-d582-4b91-a1e8-e61a7801b966"
+        "projectId": "8abe7c06-5a9f-4340-8b98-663db7217ed0"
       }
-    }
+    },
+    "owner": "deveeup"
   }
 }

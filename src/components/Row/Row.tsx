@@ -2,13 +2,13 @@ import React from "react";
 import { View, Text, Pressable } from "react-native";
 import RowStyles from "./RowStyles";
 import { getTranslations } from "../../translations";
-import { ROUTES } from "../../constants/routes";
+import { SCREENS } from "../../constants/routes";
 
 export function Row({ title, text, file, navigation }: any) {
   const { validation }: any = getTranslations();
 
    const renderPDF = () => {
-    navigation.navigate(ROUTES.PDF, {
+    navigation.navigate(SCREENS.PDF, {
       url: file
     });
   };
