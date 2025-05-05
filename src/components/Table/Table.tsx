@@ -8,13 +8,12 @@ export function Table({ petData, navigation }: any) {
       {Object.entries(petData).sort().map((item: any) => {
         switch (item[0]) {
           case "certificate":
-            return (
-              <Row
+            return;
+              {/* <Row
                 title={item[0]}
                 file={item[1]}
                 navigation={navigation}
-              />
-            );
+              /> */}
           case "findPet":
             return;
           case "image":
@@ -26,13 +25,7 @@ export function Table({ petData, navigation }: any) {
           case "password":
             return;
           case "license":
-            return (
-              <Row
-                file={item[1]}
-                navigation={navigation}
-                title={item[0]}
-              />
-            );
+            return;
           default:
             return <Row title={item[0]} text={item[1]} />
         }

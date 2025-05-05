@@ -7,7 +7,9 @@ import { SCREENS } from "../../constants/routes";
 export function Row({ title, text, file, navigation }: any) {
   const { validation }: any = getTranslations();
 
-   const renderPDF = () => {
+  text === validation.sa ? text = validation.serviceAnimal : text = text;
+  
+  const renderPDF = () => {
     navigation.navigate(SCREENS.PDF, {
       url: file
     });
